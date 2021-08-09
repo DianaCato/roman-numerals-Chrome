@@ -1,0 +1,27 @@
+{
+  "name": "extension-roman",
+  "version": "1.0.0",
+  "description": "Extension for chrome for convert numbers in roman or arabic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DianaCato/extension-roman-numerals.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Diana && Milumon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DianaCato/extension-roman-numerals/issues"
+  },
+  "homepage": "https://github.com/DianaCato/extension-roman-numerals#readme",
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "roman-numerals": "github:DianaCato/REG003-roman-numerals"
+  }
+}
