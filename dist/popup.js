@@ -268,17 +268,27 @@ const  {parse, stringify} =require( 'roman-numerals');
 
     const text = document.getElementById("number");
     const answer = document.getElementById("text");
-
-
-    document.getElementById("roman").addEventListener("click", function(){
-        try {
+    const regex = /^[0-9]*$/;
+  
+    text.addEventListener("keyup", () => {
+      if (regex.test(text.value)){
+        document.getElementById("arabic").classList.add('active');
+      }else {
+        document.getElementById("roman").classList.add('active');
+      }
+    })
+  
+  document.getElementById("roman").addEventListener("click", function () {
+    document.getElementById("roman").classList.remove('active');
+      try {
             answer.innerHTML = parse(text.value);
           } catch (error) {
             answer.innerHTML = error.message;
           }      
    });
   
-   document.getElementById("arabic").addEventListener("click", function(){
+  document.getElementById("arabic").addEventListener("click", function () {
+    document.getElementById("arabic").classList.remove('active');
     if(!isNaN(+text.value)){
         try {
             answer.innerHTML = stringify(+text.value);
@@ -288,7 +298,13 @@ const  {parse, stringify} =require( 'roman-numerals');
     }else {
         answer.innerHTML = 'Not a number';
     }
-    
-});
+  });
+  
+  document.getElementById("clear").addEventListener("click", () => {
+    document.getElementById("arabic").classList.remove('active');
+    document.getElementById("roman").classList.remove('active');
+    text.value = "";
+    answer.innerHTML = "";
+  })
 
 },{"roman-numerals":1}]},{},[4]);

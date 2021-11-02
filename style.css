@@ -1,0 +1,76 @@
+html, body {
+  height: min-content;
+}
+
+body {
+  border-radius: 5px;
+  margin: 2% auto;
+  box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+  padding: 2%;
+  /* background-image: linear-gradient(-225deg, #88825e 50%, #9c7878 50%); */
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  background-color: #2a2b38;
+  background-position: bottom center;
+}
+h3 {
+  color: #ffeba7;
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+}
+h4 {
+  color:#c4c3ca;
+}
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+.text{
+  background: rgba(255, 255, 255, 0.781);
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  margin: 5%;
+  margin-right: 30px;
+  
+  font-size: 16px;
+  font-family: 'Abel', sans-serif;
+  
+  outline: none;
+  border: none;
+
+}
+
+.btn {
+  border-radius: 4px;
+  height: 44px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 20px;
+  background-color: #324eaa;
+  color: #ffeba7;
+  -webkit-transition : all 200ms linear;
+  transition: all 200ms linear;
+  padding: 0 20px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  border: none;
+}
+
+.active {
+  background-color: #ffeba7;
+  color: #102770;
+  box-shadow: 0 8px 24px 0 rgba(255,235,167,.2);
+}
+
+.clear {
+  background-image: url("clear.png");
+  background-color:transparent;
+  border: none;
+  background-size: cover;
+  height: 3em;
+  width: 3em;
+  margin-left: 80%;
+}
